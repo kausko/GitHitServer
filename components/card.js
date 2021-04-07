@@ -1,5 +1,5 @@
 const { pascalCase, conditional } = require("../utils/string");
-const style = require("../utils/style");
+const style = require('../utils/style.json')
 const types = require("../utils/types");
 
 module.exports = ({ type, Total, Unique, disable, initialDate, theme, mode = 'light'}) => `
@@ -7,7 +7,7 @@ module.exports = ({ type, Total, Unique, disable, initialDate, theme, mode = 'li
   <foreignObject width="100%" height="100%">
     <div xmlns="http://www.w3.org/1999/xhtml">
       <style>
-        ${style}
+        ${style[0]}
       </style>
       <div class="html body Box mx-auto text-center" data-color-mode="${mode}" data-${mode}-theme="${mode}" ${conditional`style="background-color:${theme.bg_color}"`}>
         <div class="Box-body" ${conditional`style="color:${theme.text_color}"`}>
