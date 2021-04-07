@@ -19,12 +19,13 @@ Server-side SVG renderer for displaying README cards containing GitHub's Traffic
 | mode         | `DEFAULT=light` Can be `light` or `dark`. Applies GitHub's colour scheme |
 | theme        | A pre-defined [theme](https://github.com/anuraghazra/github-readme-stats/tree/master/themes). Overrides `mode` parameter |
 | disable      | `Total` or `Unique`. Hides the chosen statistic |
-| icon_color   | `%23<6-character-hex>`-color value for card's icon |
-| title_color  | `%23<6-character-hex>`-color value for card's title |
-| text_color   | `%23<6-character-hex>`-color value for card's body text |
-| bg_color     | `%23<6-character-hex>`-color value for card's background |
+| icon_color   | `%23<hex-code>`-color value for card's icon |
+| title_color  | `%23<hex-code>`-color value for card's title |
+| text_color   | `%23<hex-code>`-color value for card's body text |
+| bg_color     | `%23<hex-code>`-color value for card's background |
 |              | |
 
+*%23 is the encoded URI value for #*
 ## Example
 ![Example](https://githits.vercel.app/api/views?user=kausko&repo=Chogay&theme=react&disable=Unique&bg_color=%23000)
 

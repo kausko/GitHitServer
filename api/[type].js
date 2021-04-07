@@ -28,13 +28,7 @@ module.exports = async (req, res) => {
       const requestInit = { headers: { Authorization: `token ${PAT}` }}
       const { content } = await (await fetch(`https://api.github.com/repos/${user}/${repo}/contents/hits.json`, requestInit)).json()
       const hits = JSON.parse(Buffer.from(content, 'base64').toString('utf8'))
-      let Total = 0, Unique = 0, initialDate = null
-      hits[type].forEach((v,i) => {
-        if (!i)
-          initialDate = v.timestamp.split("T")[0]
-        Total += v.count
-        Unique += v.uniques
-      })
+      const { Total, Unique, initialDate } = hits[type]
       query = { ...query, Total, Unique, initialDate }
     } catch (error) {
       console.log(error)
