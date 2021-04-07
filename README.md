@@ -9,7 +9,7 @@ Server-side SVG rendering for GitHub Traffic Analytics. Uses the traffic data fe
 - Generate a Personal Access Token `(PAT)` from GitHub's developer settings
 - Run `vercel secrets add <secret-name> <PAT>`. This secret can be used in all of your Vercel projects.
 - Run `vercel env add secret <secret-name>`
-- Create a `.env` file and add `<secret-name>:<PAT>`
+- Create a `.env` file and add `<secret-name>=<PAT>`
 - Run `vercel dev` to start the `localhost` server
 - Run `vercel` again to deploy
 
