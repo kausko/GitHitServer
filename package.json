@@ -1,0 +1,15 @@
+{
+  "name": "githitserver",
+  "version": "1.0.0",
+  "description": "Githit API",
+  "license": "MIT",
+  "scripts": {
+    "start": "vercel dev"
+  },
+  "devDependencies": {
+    "@vercel/node": "^1.9.1"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  }
+}
