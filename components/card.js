@@ -3,7 +3,7 @@ const style = require('../utils/style.json')
 const types = require("../utils/types");
 
 module.exports = ({ type, Total, Unique, disable, initialDate, theme, mode = 'light'}) => `
-<svg fill="none" viewBox="0 0 350 200" width="350" height="200" xmlns="http://www.w3.org/2000/svg">
+<svg fill="none" viewBox="0 0 412 200" width="412" height="200" xmlns="http://www.w3.org/2000/svg">
   <foreignObject width="100%" height="100%">
     <div xmlns="http://www.w3.org/1999/xhtml">
       <style>

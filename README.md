@@ -35,7 +35,8 @@ NOTE:
 
 *%23 is the encoded URI value for #*
 ## Example
-![Example](https://githits.vercel.app/api/views?user=kausko&repo=Chogay&theme=react&disable=Unique&bg_color=%23000)
+![Example](https://githits.vercel.app/api/views?user=kausko&repo=GitHitServer&mode=dark&disable=Total)
+![Example](https://githits.vercel.app/api/clones?user=kausko&repo=GitHitServer&mode=dark&disable=Total)
 
 # Testing and self-hosting
 - Run `npm i` or `yarn` in the cloned directory
