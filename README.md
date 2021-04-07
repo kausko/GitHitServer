@@ -4,6 +4,14 @@ Server-side SVG renderer for displaying README cards containing GitHub's Traffic
 
 # Usage
 
+## Setting up GitHits GitHub Action
+Head over to [GitHits](https://github.com/kausko/GitHits) to setup a GitHub action to store traffic insights in your repository.
+
+NOTE:
+- This only works for public repositories
+- This action generates a `hits.json` file in the master branch of your repository. 
+- This file is required by GitHitServer for fetching Traffic Data
+
 ## Adding a card to markdown
 `![<image-description>](https://githits.vercel.app/api/<route>?param_n=value_n&...)`
 
@@ -42,4 +50,5 @@ Server-side SVG renderer for displaying README cards containing GitHub's Traffic
 
 *Replace `<secret-name>` with any name of your choice and `<PAT>` with the 40 character PAT (All without angular brackets)*
 
-*Inspired by [GitHub-Readme-Stats](https://github.com/anuraghazra/github-readme-stats) - [Anurag Hazra](https://github.com/anuraghazra)*
+# Inspired by
+- [GitHub-Readme-Stats](https://github.com/anuraghazra/github-readme-stats) by [Anurag Hazra](https://github.com/anuraghazra)
