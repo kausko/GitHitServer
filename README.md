@@ -27,13 +27,18 @@ NOTE:
 | mode         | `DEFAULT=light` Can be `light` or `dark`. Applies GitHub's colour scheme |
 | theme        | A pre-defined [theme](https://github.com/anuraghazra/github-readme-stats/tree/master/themes). Overrides `mode` parameter |
 | disable      | `Total` or `Unique`. Hides the chosen statistic |
-| icon_color   | `%23<hex-code>`-color value for card's icon |
-| title_color  | `%23<hex-code>`-color value for card's title |
-| text_color   | `%23<hex-code>`-color value for card's body text |
-| bg_color     | `%23<hex-code>`-color value for card's background |
+| icon_color   | `COLOR` for card's icon |
+| title_color  | `COLOR` for card's title |
+| text_color   | `COLOR` for card's body text |
+| bg_color     | `COLOR` for card's background |
 |              | |
 
-*%23 is the encoded URI value for #*
+`COLOR` accepts all URI Encoded CSS color values, including:
+  - RGB-Hex [`#fafafa` as `%23fafafa`]
+  - rgb/rgba [`rgb(4,6,8)` as `rgb(4%2C6%2C8)`]
+  - hsl/hsla [same as above]
+  - [Color Keywords](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#color_keywords)
+
 ## Example
 ![Example](https://githits.vercel.app/api/views?user=kausko&repo=GitHitServer&mode=dark&disable=Total)
 ![Example](https://githits.vercel.app/api/clones?user=kausko&repo=GitHitServer&mode=dark&disable=Total)
