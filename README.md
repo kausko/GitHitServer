@@ -1,6 +1,6 @@
 # GitHitServer
 
-Server-side SVG renderer for displaying README cards containing GitHub's Traffic Insights. It uses the traffic data fetched by [GitHits](https://github.com/kausko/GitHits) GitHub Action from the `Insights/Traffic` section of your repository.
+Server-side SVG generator for displaying README cards containing GitHub's Traffic Insights. It uses the traffic data fetched by [GitHits](https://github.com/kausko/GitHits) GitHub Action from the `Insights/Traffic` section of your repository.
 
 # Usage
 
